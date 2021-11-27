@@ -12,10 +12,9 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
     <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#766df4">
     <meta name="theme-color" content="#ffffff">
@@ -102,7 +101,7 @@
 
     </script>
     <!-- Vendor Styles-->
-    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="{{ asset('vendor/simplebar/dist/simplebar.min.css') }}"/>
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}"/>
     @stack('head')
@@ -315,9 +314,7 @@
     </header>
     <!-- Page content-->
     <section class="container d-flex justify-content-center align-items-center pt-7 pb-4" style="flex: 1 0 auto;">
-        <main class="py-4">
-            @yield('content')
-        </main>
+        @yield('content')
     </section>
 </main>
 <!-- Footer-->
@@ -333,9 +330,9 @@
 </footer>
 <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
 <!-- Vendor scrits: js libraries and plugins-->
-<script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/simplebar/dist/simplebar.min.js"></script>
-<script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}" defer></script>
+<script src="{{ asset('vendor/simplebar/dist/simplebar.min.js') }}" defer></script>
+<script src="{{ asset('vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js') }}" defer></script>
 
 <!-- Main theme script-->
 <script src="{{ asset('js/theme.min.js') }}" defer></script>
