@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/data":{"type":null,"mount_options":["uid=1000","gid=1000","_netdev"],"guestpath":"/home/data","hostpath":"/Users/juanplaza/juanplaza","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/juanplaza/juanplaza","disabled":false,"__vagrantfile":true}}}
