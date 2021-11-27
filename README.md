@@ -11,7 +11,7 @@ Application will handle entire business logic
 
 #### Usage
 
-1. `git clone https://github.com/jplaza88/juanplaza.git`
+1. `git clone https://github.com/jplaza88/juanplazadev.git`
 2. `cd juanplaza`
 3. `vagrant up`
 4. `echo '192.168.63.15  juanplaza.vm' | sudo tee -a /etc/hosts`
